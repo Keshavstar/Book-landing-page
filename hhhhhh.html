@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12वीं भौतिकी हस्तलिखित नोट्स - हिंदी माध्यम</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="कक्षा 12वीं भौतिकी के हस्तलिखित नोट्स हिंदी माध्यम में। बोर्ड परीक्षा की तैयारी के लिए सर्वश्रेष्ठ नोट्स। पूर्ण पाठ्यक्रम कवरेज और अध्याय-वार व्यवस्थित।">
+    <meta name="keywords" content="कक्षा 12 भौतिकी नोट्स, हिंदी माध्यम, हस्तलिखित नोट्स, Physics notes Class 12, Handwritten notes, Hindi medium, CBSE, State Board, JEE, NEET, बोर्ड परीक्षा">
+    <meta name="author" content="[आपका नाम]">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/1a535c/ffffff?text=N" type="image/png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* हल्का ग्रे बैकग्राउंड */
+        }
+        /* Custom colors for better resemblance to the image */
+        .bg-hero-green {
+            background: linear-gradient(135deg, #1a535c 0%, #2e8b57 100%); /* गहरा हरा ग्रेडिएंट */
+        }
+        .text-accent-orange {
+            color: #ff6f61; /* नारंगी/पीच जैसा रंग */
+        }
+        .cta-button {
+            background-color: #ff6f61; /* नारंगी बटन */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 111, 97, 0.4); /* नारंगी शैडो */
+        }
+        .cta-button:hover {
+            background-color: #e65c50; /* गहरा नारंगी होवर पर */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 111, 97, 0.6);
+        }
+        .secondary-cta-button {
+            border: 2px solid #ff6f61;
+            color: #ff6f61;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+        .secondary-cta-button:hover {
+            background-color: #ff6f61;
+            color: white;
+            transform: translateY(-3px);
+        }
+        .feature-card {
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 1.25rem; /* गोल कोने */
+            border: 1px solid #f0f0f0;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .testimonial-card {
+            background-color: #fff;
+            border-left: 6px solid #1a535c; /* गहरा हरा बॉर्डर */
+            border-radius: 0.75rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        .price-box {
+            background: linear-gradient(45deg, #e0f7fa 0%, #c1e4f0 100%); /* हल्का नीला ग्रेडिएंट */
+            border: 3px solid #1a535c; /* गहरा हरा बॉर्डर */
+            border-radius: 2rem;
+            padding: 2.5rem;
+        }
+        /* General Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            max-width: 90%;
+            width: 550px;
+            transform: translateY(-70px);
+            transition: transform 0.4s ease;
+            position: relative; /* For close button positioning */
+        }
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+
+        /* Policy Modals Specific Styles */
+        .policy-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1050; /* Higher than other modals */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+        .policy-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .policy-modal-content {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            max-width: 90%;
+            width: 700px; /* Wider for policy content */
+            height: 90%; /* Take more height */
+            overflow-y: auto; /* Make content scrollable */
+            transform: translateY(-70px);
+            transition: transform 0.4s ease;
+            position: relative;
+        }
+        .policy-modal-overlay.active .policy-modal-content {
+            transform: translateY(0);
+        }
+        .policy-modal-content .close-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: background-color 0.2s ease;
+        }
+        .policy-modal-content .close-button:hover {
+            background-color: #eee;
+        }
+
+
+        /* Accordion Styles */
+        .accordion-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .accordion-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 0;
+            cursor: pointer;
+            font-weight: 700; /* Bolder font */
+            color: #333;
+            font-size: 1.125rem; /* Larger font */
+        }
+        .accordion-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            padding-bottom: 0;
+            color: #555;
+            line-height: 1.7;
+        }
+        .accordion-answer.open {
+            max-height: 600px; /* Increased for more content */
+            padding-bottom: 1.25rem;
+        }
+        .accordion-question svg {
+            transition: transform 0.3s ease;
+        }
+        .accordion-question.active svg {
+            transform: rotate(180deg);
+        }
+
+        /* Scroll to Top Button */
+        #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 25px;
+            right: 35px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #ff6f61;
+            color: white;
+            cursor: pointer;
+            padding: 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(255, 111, 97, 0.5);
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #e65c50;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 111, 97, 0.7);
+        }
+
+        /* UPI Copy Confirmation */
+        .copy-confirm {
+            position: absolute;
+            background-color: #2e8b57;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.75rem;
+            font-size: 0.95rem;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            pointer-events: none;
+            white-space: nowrap;
+            top: 100%; /* Position below the button */
+            left: 50%;
+            transform: translateX(-50%) translateY(15px);
+        }
+        .copy-confirm.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* Countdown Timer */
+        .countdown-timer span {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ff6f61;
+            margin: 0 0.5rem;
+            display: inline-block;
+            min-width: 40px;
+        }
+        .countdown-timer div {
+            font-size: 0.875rem;
+            color: #f0f0f0;
+            text-transform: uppercase;
+            margin-top: -0.5rem;
+        }
+        .star-rating .star {
+            color: #FFD700; /* Gold color for stars */
+            font-size: 1.25rem;
+        }
+        .problem-solution-card {
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            border-radius: 1.25rem;
+            border: 1px solid #f0f0f0;
+            padding: 2rem;
+            text-align: left;
+        }
+        .problem-solution-card h3 {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #1a535c;
+            margin-bottom: 0.75rem;
+        }
+        .problem-solution-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .why-choose-card {
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            border-radius: 1.25rem;
+            border: 1px solid #f0f0f0;
+            padding: 2rem;
+            text-align: center;
+        }
+        .why-choose-card h3 {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #1a535c;
+            margin-bottom: 0.75rem;
+        }
+        .why-choose-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .why-choose-card .icon,
+        .guarantee-card .icon,
+        .how-it-works-card .icon,
+        .bonus-card .icon,
+        .free-sample-icon { /* Added for new icon */
+            font-size: 3rem; /* Larger emoji size */
+            margin-bottom: 1rem;
+            display: block;
+            text-align: center;
+        }
+
+        /* Chat Widget Button */
+        #chatWidgetBtn {
+            position: fixed;
+            bottom: 25px;
+            left: 35px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #2e8b57; /* Green for chat */
+            color: white;
+            cursor: pointer;
+            padding: 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(46, 139, 87, 0.5);
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        #chatWidgetBtn:hover {
+            background-color: #287a4c;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(46, 139, 87, 0.7);
+        }
+
+        /* Scroll Progress Bar */
+        #progressBar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 5px; /* Height of the bar */
+            background-color: #ff6f61; /* Accent orange */
+            z-index: 1001; /* Above everything else */
+            transition: width 0.1s linear; /* Smooth transition for width */
+        }
+
+        /* Testimonial Modal */
+        .testimonial-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1020; /* Higher than policy modals */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+        .testimonial-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .testimonial-modal-content {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            max-width: 90%;
+            width: 600px;
+            transform: translateY(-70px);
+            transition: transform 0.4s ease;
+            position: relative;
+            text-align: center;
+        }
+        .testimonial-modal-overlay.active .testimonial-modal-content {
+            transform: translateY(0);
+        }
+
+        /* Quick Links Section */
+        .quick-links-card {
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            border-radius: 1.25rem;
+            padding: 2rem;
+            text-align: left;
+        }
+        .quick-links-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .quick-links-card li {
+            margin-bottom: 0.75rem;
+        }
+        .quick-links-card a {
+            color: #1a535c;
+            font-weight: 600;
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+        }
+        .quick-links-card a:hover {
+            color: #ff6f61;
+        }
+        .quick-links-card a svg {
+            margin-right: 0.5rem;
+        }
+
+        /* Money-Back Guarantee Section */
+        .guarantee-section {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f7fa 100%); /* Light blue gradient */
+            border: 2px dashed #1a535c; /* Dashed border */
+            border-radius: 1.5rem;
+            padding: 3rem;
+            text-align: center;
+        }
+        .guarantee-section .icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: #2e8b57; /* Green checkmark */
+        }
+
+        /* Newsletter Success Message */
+        #newsletterMessage {
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        #newsletterMessage.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #newsletterMessage.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        #newsletterMessage.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+
+    <!-- Schema.org Structured Data for Product -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "कक्षा 12वीं भौतिकी हस्तलिखित नोट्स - हिंदी माध्यम",
+      "image": "https://placehold.co/450x600/FFFFFF/000000?text=कक्षा+12वीं+भौतिकी+नोट्स%0A(हाथों+से+लिखे+गए)",
+      "description": "कक्षा 12वीं भौतिकी के पूरे पाठ्यक्रम को कवर करने वाले विस्तृत हस्तलिखित नोट्स, विशेष रूप से हिंदी माध्यम के छात्रों के लिए। बोर्ड परीक्षा की तैयारी और उच्च अंक प्राप्त करने के लिए आदर्श।",
+      "brand": {
+        "@type": "Brand",
+        "name": "[आपका ब्रांड नाम]"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "[आपकी लैंडिंग पेज URL]",
+        "priceCurrency": "INR",
+        "price": "39",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "[आपका नाम/कंपनी का नाम]"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1200"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "रवि कुमार"
+          },
+          "reviewBody": "ये नोट्स मेरी भौतिकी की तैयारी के लिए गेम-चेंजर साबित हुए! बहुत आसान भाषा में सब कुछ समझाया गया है।"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "पूजा सिंह"
+          },
+          "reviewBody": "मैंने सोचा भी नहीं था कि हैंड रिटेन नोट्स इतने उपयोगी हो सकते हैं। धन्यवाद!"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Scroll Progress Bar -->
+    <div id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <section class="bg-hero-green py-16 md:py-28 px-4 sm:px-6 lg:px-8 rounded-b-3xl overflow-hidden relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
+            <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+                    कक्षा 12वीं भौतिकी में <br class="hidden md:block"><span class="text-accent-orange">शत-प्रतिशत अंक</span> प्राप्त करें!
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
+                    अब पाएं हस्तलिखित नोट्स जो आपकी बोर्ड परीक्षा की तैयारी को देंगे नई दिशा। विशेष रूप से हिंदी माध्यम के छात्रों के लिए तैयार किए गए।
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-5 sm:space-y-0 sm:space-x-6">
+                    <button id="buyNowBtnHero" class="cta-button text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-opacity-75 text-xl">
+                        अभी खरीदें!
+                    </button>
+                    <a href="#features" class="secondary-cta-button bg-transparent font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-opacity-75 text-xl">
+                        और जानें
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+                <!-- High-quality placeholder image for the book/notes -->
+                <img src="https://placehold.co/450x600/FFFFFF/000000?text=कक्षा+12वीं+भौतिकी+नोट्स%0A(हाथों+से+लिखे+गए)" alt="कक्षा 12वीं भौतिकी नोट्स" class="rounded-xl shadow-2xl max-w-full h-auto transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-white text-center">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+                हजारों छात्रों और विश्वसनीय प्लेटफॉर्म पर भरोसा
+            </h2>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                <!-- Google Pay Logo from Wikimedia Commons -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/120px-Google_Pay_Logo.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/120x60/4285F4/FFFFFF?text=Google+Pay';" alt="Google Pay Logo" class="h-12 rounded-md shadow-sm opacity-90 hover:opacity-100 transition-opacity">
+                <!-- PhonePe Logo from Wikimedia Commons -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/PhonePe_Logo.svg/120px-PhonePe_Logo.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/120x60/673AB7/FFFFFF?text=PhonePe';" alt="PhonePe Logo" class="h-12 rounded-md shadow-sm opacity-90 hover:opacity-100 transition-opacity">
+                <!-- Paytm Logo from Wikimedia Commons -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Paytm_logo.svg/120px-Paytm_logo.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/120x60/E21D27/FFFFFF?text=Paytm';" alt="Paytm Logo" class="h-12 rounded-md shadow-sm opacity-90 hover:opacity-100 transition-opacity">
+                <!-- BHIM UPI Logo from Wikimedia Commons -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/BHIM_UPI_Logo.svg/120px-BHIM_UPI_Logo.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/120x60/003366/FFFFFF?text=BHIM';" alt="BHIM UPI Logo" class="h-12 rounded-md shadow-sm opacity-90 hover:opacity-100 transition-opacity">
+                <!-- Add more as needed -->
+            </div>
+            <p class="text-sm text-gray-500 mt-6">
+                **नोट:** ये लोगो सार्वजनिक रूप से उपलब्ध स्रोतों (जैसे विकिमीडिया कॉमन्स) से लोड किए गए हैं। सर्वोत्तम गुणवत्ता और आधिकारिक उपयोग के लिए, कृपया संबंधित ब्रांडों के आधिकारिक लोगो और उपयोग दिशानिर्देशों का पालन करें।
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Links / Table of Contents Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-100 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                पेज पर तुरंत नेविगेट करें
+            </h2>
+            <div class="quick-links-card mx-auto max-w-md">
+                <ul>
+                    <li><a href="#features"><svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg> नोट्स की विशेषताएँ</a></li>
+                    <li><a href="#whats-inside"><svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"></path></svg> आपको नोट्स में क्या मिलेगा?</a></li>
+                    <li><a href="#why-choose-us"><svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> हमें क्यों चुनें?</a></li>
+                    <li><a href="#money-back-guarantee"><svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg> मनी-बैक गारंटी</a></li>
+                    <li><a href="#problems-solutions"><svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> समस्याओं का समाधान</a></li>
+                    <li><a href="#free-sample-section"><svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"></path></svg> मुफ़्त सैंपल अध्याय</a></li>
+                    <li><a href="#faq"><svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9.228a4.5 4.5 0 116.364 0L12 12.071l-1.414-1.414a4.5 4.5 0 010-6.364z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.712 11.288A12.5 12.5 0 0112 15.5c-1.747 0-3.463-.443-4.99-1.295L6 14l-.01 3.497a2.5 2.5 0 002.5 2.5H18.5a2.5 2.5 0 002.5-2.5V14l-1.01-1.295z"></path></svg> अक्सर पूछे जाने वाले प्रश्न</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Clarification Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                क्या आप कक्षा 12वीं के छात्र हैं?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+                यदि आप कक्षा 12वीं भौतिकी (Physics) के हिंदी माध्यम के छात्र हैं और बोर्ड परीक्षा में शानदार प्रदर्शन करना चाहते हैं, तो ये नोट्स विशेष रूप से आपके लिए डिज़ाइन किए गए हैं!
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                हम समझते हैं आपकी चुनौतियाँ, और हमारे नोट्स आपको उन पर विजय पाने में मदद करेंगे।
+            </p>
+        </div>
+    </section>
+
+    <!-- Ebook Features Section -->
+    <section id="features" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                आपकी सफलता की कुंजी - इन नोट्स में क्या है खास?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card p-8 text-left">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">📖 पूर्ण पाठ्यक्रम कवरेज</h3>
+                    <p class="text-gray-700">कक्षा 12वीं भौतिकी के पूरे पाठ्यक्रम को कवर करने वाले विस्तृत नोट्स, ताकि कुछ भी छूटे नहीं और आपकी तैयारी पूरी हो।</p>
+                </div>
+                <div class="feature-card p-8 text-left">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">✍️ हाथों से लिखे गए नोट्स</h3>
+                    <p class="text-gray-700">स्पष्ट और सुपाठ्य हस्तलिखित नोट्स, जो आपको अपनी कक्षा के नोट्स की याद दिलाएंगे और जटिल अवधारणाओं को समझने में आसान बनाएंगे।</p>
+                </div>
+                <div class="feature-card p-8 text-left">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">🇮🇳 पूर्ण हिंदी माध्यम</h3>
+                    <p class="text-gray-700">विशेष रूप से हिंदी माध्यम के छात्रों के लिए तैयार किए गए, सरल और समझने योग्य हिंदी भाषा में, बिना किसी अनुवाद की जटिलता के।</p>
+                </div>
+                <div class="feature-card p-8 text-left">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">📚 अध्याय-वार व्यवस्थित</h3>
+                    <p class="text-gray-700">हर अध्याय को अलग-अलग व्यवस्थित किया गया है ताकि आपको अध्ययन करने और रिवीजन करने में आसानी हो, और आप अपनी गति से सीख सकें।</p>
+                </div>
+                <div class="feature-card p-8 text-left">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">💡 महत्वपूर्ण सूत्र और अवधारणाएं</h3>
+                    <p class="text-gray-700">सभी महत्वपूर्ण सूत्रों और अवधारणाओं को स्पष्ट रूप से समझाया गया है, जो परीक्षा के लिए आवश्यक हैं और आपको उच्च अंक प्राप्त करने में मदद करेंगे।</p>
+                </div>
+                <div class="feature-card p-8 text-left">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">🎯 परीक्षा-उन्मुखी दृष्टिकोण</h3>
+                    <p class="text-gray-700">बोर्ड परीक्षा में अच्छे अंक लाने के लिए आवश्यक सभी महत्वपूर्ण विषयों पर विशेष ध्यान दिया गया है, ताकि आप आत्मविश्वास के साथ परीक्षा दे सकें।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Get Section -->
+    <section id="whats-inside" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                आपको नोट्स में क्या मिलेगा?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">📚 विस्तृत अध्याय-वार कवरेज:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>अध्याय 1: विद्युत आवेश तथा क्षेत्र (25+ पेज)</li>
+                        <li>अध्याय 2: स्थिरवैद्युत विभव तथा धारिता (20+ पेज)</li>
+                        <li>अध्याय 3: विद्युत धारा (30+ पेज)</li>
+                        <li>अध्याय 4: गतिमान आवेश और चुंबकत्व (28+ पेज)</li>
+                        <li>अध्याय 5: चुंबकत्व एवं द्रव्य (15+ पेज)</li>
+                        <li>और अन्य सभी महत्वपूर्ण अध्याय...</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">✨ अतिरिक्त विशेषताएं:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>प्रत्येक अध्याय के अंत में महत्वपूर्ण सूत्र और परिभाषाएं।</li>
+                        <li>बोर्ड परीक्षा के लिए आवश्यक मुख्य अवधारणाओं पर विशेष जोर।</li>
+                        <li>जटिल आरेखों और ग्राफिक्स का स्पष्ट चित्रण।</li>
+                        <li>आसान भाषा में समझाया गया ताकि हर छात्र समझ सके।</li>
+                        <li>PDF फॉर्मेट में, जिसे आप कहीं भी, कभी भी पढ़ सकते हैं।</li>
+                        <li>परीक्षा से पहले त्वरित रिवीजन के लिए आदर्श।</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- New: Responsive PDF Inside Pages Preview -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">नोट्स के अंदर एक झलक:</h3>
+                <img
+                    src="https://placehold.co/800x450/E0F2F7/000000?text=Notes+Inside+Preview%0A(Handwritten+Physics+Notes)"
+                    onerror="this.onerror=null;this.src='https://placehold.co/800x450/E0F2F7/000000?text=नोट्स+के+अंदर+एक+झलक';"
+                    alt="भौतिकी नोट्स के अंदर के पेज का प्रीव्यू"
+                    class="w-full max-w-3xl mx-auto rounded-xl shadow-lg border-4 border-gray-300"
+                >
+                <p class="text-md text-gray-600 mt-4">यह आपको नोट्स की गुणवत्ता और स्पष्टता का अंदाजा देगा।</p>
+            </div>
+            <p class="text-lg text-gray-700 mt-8">
+                यह नोट्स आपकी भौतिकी की तैयारी को एक नया आयाम देंगे!
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section - Updated Icons -->
+    <section id="why-choose-us" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                हमें क्यों चुनें? आपके लिए क्या है खास?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="why-choose-card">
+                    <span class="icon">👨‍🏫</span> <!-- Updated icon -->
+                    <h3>विशेषज्ञ द्वारा तैयार</h3>
+                    <p class="text-gray-700">हमारे नोट्स अनुभवी शिक्षकों द्वारा बनाए गए हैं, जो आपको सटीक और विश्वसनीय जानकारी प्रदान करते हैं।</p>
+                </div>
+                <div class="why-choose-card">
+                    <span class="icon">🏆</span> <!-- Updated icon -->
+                    <h3>परीक्षा में सफलता</h3>
+                    <p class="text-gray-700">इन नोट्स को पढ़कर आप बोर्ड परीक्षा में अधिकतम अंक प्राप्त करने के लिए तैयार होंगे।</p>
+                </div>
+                <div class="why-choose-card">
+                    <span class="icon">⏱️</span> <!-- Updated icon -->
+                    <h3>समय बचाएं</h3>
+                    <p class="text-gray-700">अब आपको नोट्स बनाने में समय बर्बाद करने की ज़रूरत नहीं, सीधे पढ़ाई पर ध्यान दें।</p>
+                </div>
+                <div class="why-choose-card">
+                    <span class="icon">💡</span> <!-- Updated icon -->
+                    <h3>स्पष्ट अवधारणाएं</h3>
+                    <p class="text-gray-700">जटिल विषयों को सरल और स्पष्ट तरीके से समझाया गया है, जिससे समझना आसान हो जाता है।</p>
+                </div>
+                <div class="why-choose-card">
+                    <span class="icon">📚</span> <!-- Updated icon -->
+                    <h3>संपूर्ण पाठ्यक्रम</h3>
+                    <p class="text-gray-700">कक्षा 12वीं भौतिकी का पूरा पाठ्यक्रम नोट्स में शामिल है, कुछ भी छूटेगा नहीं।</p>
+                </div>
+                <div class="why-choose-card">
+                    <span class="icon">💰</span> <!-- Updated icon -->
+                    <h3>किफायती दाम</h3>
+                    <p class="text-gray-700">उच्च गुणवत्ता वाले नोट्स अब सबसे किफायती दाम पर उपलब्ध हैं।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Money-Back Guarantee Section -->
+    <section id="money-back-guarantee" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-100 text-center">
+        <div class="max-w-4xl mx-auto guarantee-section">
+            <span class="icon">💯</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                हमारी 100% संतुष्टि गारंटी!
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                हमें अपने नोट्स की गुणवत्ता पर पूरा भरोसा है। यदि आप हमारे नोट्स से पूरी तरह संतुष्ट नहीं हैं, तो खरीद के 7 दिनों के भीतर हमसे संपर्क करें और हम आपको पूरा रिफंड देंगे।
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                आपकी सफलता हमारी प्राथमिकता है!
+            </p>
+        </div>
+    </section>
+
+    <!-- Problem-Solution Section -->
+    <section id="problems-solutions" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                क्या आप इन समस्याओं का सामना कर रहे हैं?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="problem-solution-card">
+                    <h3 class="mb-4">❌ भौतिकी के नोट्स ढूंढने में परेशानी</h3>
+                    <p class="text-gray-700">बाजार में सही और विश्वसनीय हिंदी माध्यम के भौतिकी नोट्स मिलना मुश्किल है।</p>
+                    <p class="text-gray-700 mt-2"><span class="font-bold text-green-600">समाधान:</span> हमारे नोट्स पूर्ण और व्यवस्थित हैं, कहीं और भटकने की ज़रूरत नहीं!</p>
+                </div>
+                <div class="problem-solution-card">
+                    <h3 class="mb-4">❌ जटिल अवधारणाओं को समझना मुश्किल</h3>
+                    <p class="text-gray-700">किताबों में दी गई भाषा अक्सर छात्रों के लिए बहुत जटिल होती है।</p>
+                    <p class="text-gray-700 mt-2"><span class="font-bold text-green-600">समाधान:</span> हस्तलिखित नोट्स सरल और समझने योग्य भाषा में हैं।</p>
+                </div>
+                <div class="problem-solution-card">
+                    <h3 class="mb-4">❌ समय की कमी और रिवीजन का दबाव</h3>
+                    <p class="text-gray-700">परीक्षा से पहले पूरे पाठ्यक्रम का रिवीजन करना चुनौतीपूर्ण होता है।</p>
+                    <p class="text-gray-700 mt-2"><span class="font-bold text-green-600">समाधान:</span> हमारे नोट्स संक्षिप्त और परीक्षा-उन्मुखी हैं, जो त्वरित रिवीजन में मदद करते हैं।</p>
+                </div>
+                <div class="problem-solution-card">
+                    <h3 class="mb-4">❌ बोर्ड परीक्षा में अच्छे अंक लाने की चिंता</h3>
+                    <p class="text-gray-700">सही मार्गदर्शन के बिना अच्छे अंक प्राप्त करना मुश्किल हो सकता है।</p>
+                    <p class="text-gray-700 mt-2"><span class="font-bold text-green-600">समाधान:</span> ये नोट्स आपको परीक्षा में उत्कृष्ट प्रदर्शन करने के लिए तैयार करेंगे।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Content Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-100 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                और भी बहुत कुछ! आपको मिलेगा अतिरिक्त बोनस:
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex items-center p-6 bg-white rounded-xl shadow-md bonus-card">
+                    <span class="icon mr-4">🎁</span> <!-- Updated icon -->
+                    <p class="text-lg text-gray-700 font-semibold">अध्याय-वार महत्वपूर्ण प्रश्नोत्तर (जल्द आ रहा है!)</p>
+                </div>
+                <div class="flex items-center p-6 bg-white rounded-xl shadow-md bonus-card">
+                    <span class="icon mr-4">🚀</span> <!-- Updated icon -->
+                    <p class="text-lg text-gray-700 font-semibold">तेज़ रिवीजन के लिए माइंड मैप्स (जल्द आ रहा है!)</p>
+                </div>
+            </div>
+            <p class="text-lg text-gray-700 mt-8">
+                हम आपके सीखने के अनुभव को बेहतर बनाने के लिए लगातार काम कर रहे हैं।
+            </p>
+        </div>
+    </section>
+
+    
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                हजारों छात्रों का भरोसा
+            </h2>
+            <div class="flex justify-center items-center mb-6">
+                <span class="star-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </span>
+                <span class="text-2xl font-bold text-gray-800 ml-3">4.9/5</span>
+                <span class="text-gray-600 ml-2">(1,200+ रेटिंग्स)</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card shadow-md cursor-pointer" data-testimonial-id="1">
+                    <p class="text-gray-700 italic mb-4">"ये नोट्स मेरी भौतिकी की तैयारी के लिए गेम-चेंजर साबित हुए! बहुत आसान भाषा में सब कुछ समझाया गया है।"</p>
+                    <p class="font-semibold text-gray-900">- रवि कुमार, कानपुर</p>
+                </div>
+                <div class="testimonial-card shadow-md cursor-pointer" data-testimonial-id="2">
+                    <p class="text-gray-700 italic mb-4">"मैंने सोचा भी नहीं था कि हैंड रिटेन नोट्स इतने उपयोगी हो सकते हैं। धन्यवाद!"</p>
+                    <p class="font-semibold text-gray-900">- पूजा सिंह, पटना</p>
+                </div>
+                <div class="testimonial-card shadow-md cursor-pointer" data-testimonial-id="3">
+                    <p class="text-gray-700 italic mb-4">"अब मुझे भौतिकी का डर नहीं लगता। सब कुछ व्यवस्थित और स्पष्ट है।"</p>
+                    <p class="font-semibold text-gray-900">- आकाश वर्मा, जयपुर</p>
+                </div>
+                <div class="testimonial-card shadow-md cursor-pointer" data-testimonial-id="4">
+                    <p class="text-gray-700 italic mb-4">"इन नोट्स ने मेरे कॉन्सेप्ट्स को बहुत मजबूत किया। परीक्षा में बहुत मदद मिली।"</p>
+                    <p class="font-semibold text-gray-900">- स्नेहा कुमारी, भोपाल</p>
+                </div>
+                <div class="testimonial-card shadow-md cursor-pointer" data-testimonial-id="5">
+                    <p class="text-gray-700 italic mb-4">"भौतिकी के लिए इससे बेहतर नोट्स नहीं मिल सकते। हर छात्र को इन्हें खरीदना चाहिए।"</p>
+                    <p class="font-semibold text-gray-900">- विक्रम सिंह, लखनऊ</p>
+                </div>
+                <div class="testimonial-card shadow-md cursor-pointer" data-testimonial-id="6">
+                    <p class="text-gray-700 italic mb-4">"मुझे लगा था कि भौतिकी बहुत मुश्किल है, लेकिन इन नोट्स ने इसे बहुत आसान बना दिया।"</p>
+                    <p class="font-semibold text-gray-900">- आयशा खान, दिल्ली</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees/Trust Badges Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                हमारा वादा: आपकी सफलता हमारी प्राथमिकता
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl shadow-md guarantee-card">
+                    <span class="icon mb-4">✅</span> <!-- Updated icon -->
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">उच्च गुणवत्ता</h3>
+                    <p class="text-gray-700">हमारे नोट्स अनुभवी शिक्षकों द्वारा तैयार किए गए हैं ताकि आपको सर्वोत्तम गुणवत्ता वाली सामग्री मिल सके।</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl shadow-md guarantee-card">
+                    <span class="icon mb-4">🔒</span> <!-- Updated icon -->
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">सुरक्षित भुगतान</h3>
+                    <p class="text-gray-700">आपका भुगतान UPI के माध्यम से 100% सुरक्षित है। आपकी जानकारी गोपनीय रखी जाती है।</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl shadow-md guarantee-card">
+                    <span class="icon mb-4">🤝</span> <!-- Updated icon -->
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">उत्कृष्ट समर्थन</h3>
+                    <p class="text-gray-700">यदि आपको कोई समस्या आती है, तो हमारी सहायता टीम आपकी मदद के लिए हमेशा तैयार है।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About The Author Section (Optional) -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+            <div class="md:w-1/3 flex justify-center">
+                <!-- High-quality placeholder image for the author -->
+                <img src="https://placehold.co/250x250/AEC6CF/000000?text=लेखक+की+तस्वीर%0A(आपका+नाम)" alt="लेखक की तस्वीर" class="rounded-full shadow-lg w-64 h-64 object-cover border-4 border-accent-orange">
+            </div>
+            <div class="md:w-2/3 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    नोट्स तैयार करने वाले के बारे में
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    इन नोट्स को <span class="font-semibold">[आपका नाम/नोट्स बनाने वाले का नाम]</span> द्वारा तैयार किया गया है, जिन्हें भौतिकी शिक्षण का <span class="font-semibold">[X]</span> वर्षों का अनुभव है। उन्होंने <span class="font-semibold">[विश्वविद्यालय/संस्थान का नाम]</span> से अपनी <span class="font-semibold">[डिग्री]</span> पूरी की है और हजारों छात्रों को सफलता प्राप्त करने में मदद की है।
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    उनका लक्ष्य छात्रों के लिए जटिल अवधारणाओं को सरल बनाना और उन्हें बोर्ड परीक्षा में उत्कृष्ट प्रदर्शन करने के लिए सशक्त बनाना है।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-100 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                यह कैसे काम करता है?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md how-it-works-card">
+                    <div class="text-5xl font-bold text-accent-orange mb-4">1</div>
+                    <span class="icon mb-4">💰</span> <!-- Updated icon -->
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">भुगतान करें</h3>
+                    <p class="text-gray-700">UPI के माध्यम से सुरक्षित रूप से ₹39 का भुगतान करें।</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md how-it-works-card">
+                    <div class="text-5xl font-bold text-accent-orange mb-4">2</div>
+                    <span class="icon mb-4">📝</span> <!-- Updated icon -->
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">विवरण भरें</h3>
+                    <p class="text-gray-700">भुगतान के बाद Google Form पर अपना विवरण (ईमेल, स्क्रीनशॉट) भरें।</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md how-it-works-card">
+                    <div class="text-5xl font-bold text-accent-orange mb-4">3</div>
+                    <span class="icon mb-4">📧</span> <!-- Updated icon -->
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">लिंक प्राप्त करें</h3>
+                    <p class="text-gray-700">भुगतान सत्यापन के बाद, नोट्स का PDF लिंक आपके ईमेल पर भेज दिया जाएगा।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                अक्सर पूछे जाने वाले प्रश्न (FAQ)
+            </h2>
+            <div id="faq-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-question">
+                        <span>ये नोट्स किस क्लास और माध्यम के लिए हैं?</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="accordion-answer">
+                        <p>ये नोट्स विशेष रूप से कक्षा 12वीं भौतिकी (Physics) के हिंदी माध्यम के छात्रों के लिए तैयार किए गए हैं।</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-question">
+                        <span>क्या ये नोट्स सभी बोर्ड्स (CBSE, State Boards) के लिए उपयोगी हैं?</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="accordion-answer">
+                        <p>हाँ, ये नोट्स नवीनतम NCERT पाठ्यक्रम और बोर्ड परीक्षा पैटर्न को ध्यान में रखकर बनाए गए हैं, इसलिए ये CBSE और विभिन्न राज्य बोर्डों के छात्रों के लिए समान रूप से उपयोगी हैं।</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-question">
+                        <span>नोट्स का फॉर्मेट क्या है और मैं इन्हें कैसे डाउनलोड कर सकता हूँ?</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                <div class="accordion-answer">
+                        <p>नोट्स PDF फॉर्मेट में हैं। भुगतान सफलतापूर्वक होने और आपके विवरण सत्यापित होने के बाद, आपको नोट्स की डाउनलोड लिंक आपके ईमेल पर भेज दी जाएगी।</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-question">
+                        <span>भुगतान के बाद नोट्स कब तक मिलेंगे?</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="accordion-answer">
+                        <p>भुगतान और Google Form पर आपके विवरण प्राप्त होने के बाद, हम 24-48 घंटों के भीतर आपके भुगतान को सत्यापित करेंगे और नोट्स का डाउनलोड लिंक आपके ईमेल पर भेज देंगे।</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-question">
+                        <span>यदि मुझे नोट्स डाउनलोड करने में समस्या आती है तो क्या करें?</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="accordion-answer">
+                        <p>यदि आपको नोट्स डाउनलोड करने में कोई समस्या आती है, तो कृपया हमें <a href="mailto:your_email@example.com" class="text-blue-600 hover:underline">your_email@example.com</a> पर ईमेल करें। हम आपकी सहायता के लिए जल्द से जल्द संपर्क करेंगे।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-hero-green text-white text-center rounded-t-3xl">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                अभी अपनी सफलता की राह पर चलें!
+            </h2>
+            <p class="text-lg md:text-xl mb-4 leading-relaxed">
+                यह <span class="font-bold text-yellow-300">सीमित समय का ऑफर</span> है! छूट समाप्त होने से पहले प्राप्त करें!
+            </p>
+            <!-- Countdown Timer -->
+            <div id="countdown" class="countdown-timer flex justify-center items-end space-x-2 mb-8">
+                <div><span id="days">00</span><br>दिन</div>
+                <div><span id="hours">00</span><br>घंटे</div>
+                <div><span id="minutes">00</span><br>मिनट</div>
+                <div><span id="seconds">00</span><br>सेकंड</div>
+            </div>
+
+            <div class="price-box p-6 md:p-8 rounded-xl shadow-xl inline-block mb-8 text-gray-900">
+                <p class="text-xl md:text-2xl font-semibold mb-2">विशेष ऑफर मूल्य:</p>
+                <p class="text-4xl md:text-5xl font-bold text-blue-700">₹ <span class="text-red-600 line-through">49</span> <span class="text-green-600">39</span></p>
+                <p class="text-lg md:text-xl font-semibold mt-2">केवल ₹39 में पाएं!</p>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button id="buyNowBtnFooter" class="cta-button text-white font-bold py-4 px-12 rounded-full shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-opacity-75 text-xl">
+                    अभी खरीदें!
+                </button>
+                <!-- Removed WhatsApp Button -->
+            </div>
+            <p class="text-sm mt-4 text-gray-200">सुरक्षित भुगतान <span class="font-bold">UPI</span> के माध्यम से।</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-200 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                हमारे न्यूज़लेटर की सदस्यता लें!
+            </h2>
+            <p class="text-lg text-gray-700 mb-8">
+                भौतिकी के टिप्स, नए नोट्स और विशेष ऑफ़र सीधे अपने इनबॉक्स में प्राप्त करें।
+            </p>
+            <!-- Form updated to send data to Google Apps Script via fetch -->
+            <form id="newsletterForm" class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <input type="email" name="email" id="newsletterEmailInput" placeholder="अपना ईमेल पता दर्ज करें" class="flex-grow w-full sm:w-auto p-4 rounded-full border-2 border-gray-300 focus:outline-none focus:border-accent-orange text-lg" required>
+                <button type="submit" class="cta-button text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-opacity-75 text-lg">
+                    सदस्यता लें
+                </button>
+            </form>
+            <div id="newsletterMessage" class="hidden"></div> <!-- Newsletter success/error message -->
+            <p class="text-sm text-gray-600 mt-4">हम आपके ईमेल को कभी भी किसी तीसरे पक्ष के साथ साझा नहीं करेंगे।</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            <p class="mb-4">&copy; 2025 [आपका नाम/कंपनी का नाम]. सर्वाधिकार सुरक्षित।</p>
+            <div class="flex flex-wrap justify-center space-x-4 md:space-x-8 mb-4">
+                <a href="#" class="footer-link hover:underline" data-policy="privacy">गोपनीयता नीति</a>
+                <a href="#" class="footer-link hover:underline" data-policy="refund">वापसी नीति</a>
+                <a href="#" class="footer-link hover:underline" data-policy="terms">नियम और शर्तें</a>
+                <a href="#" class="footer-link hover:underline" data-policy="contact">संपर्क करें</a>
+            </div>
+            <!-- Removed Social Media Links from Footer -->
+            <p class="text-gray-400 mt-4">सुरक्षित भुगतान:
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.svg" onerror="this.onerror=null;this.src='https://placehold.co/60x20/000000/FFFFFF?text=Visa';" alt="Visa" class="inline-block h-5 mx-1 opacity-80">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" onerror="this.onerror=null;this.src='https://placehold.co/60x20/000000/FFFFFF?text=Mastercard';" alt="Mastercard" class="inline-block h-5 mx-1 opacity-80">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/BHIM_UPI_Logo.svg" onerror="this.onerror=null;this.src='https://placehold.co/60x20/000000/FFFFFF?text=UPI';" alt="UPI" class="inline-block h-5 mx-1 opacity-80">
+                <!-- Add more payment icons as needed -->
+            </p>
+            <p class="text-gray-400 mt-2">256-बिट SSL एन्क्रिप्शन द्वारा सुरक्षित</p>
+            <p class="text-gray-400 mt-4">किसी भी प्रश्न के लिए, हमें ईमेल करें: <a href="mailto:your_email@example.com" class="text-blue-400 hover:underline">your_email@example.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget Button (Placeholder) -->
+    <button id="chatWidgetBtn" title="हमसे चैट करें">💬</button>
+
+    <!-- UPI Payment Modal -->
+    <div id="upiModal" class="modal-overlay">
+        <div class="modal-content text-center relative">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">UPI के माध्यम से भुगतान करें</h3>
+            <p class="text-lg text-gray-700 mb-4">कृपया नीचे दिए गए UPI ID पर ₹39 का भुगतान करें या QR कोड स्कैन करें।</p>
+
+            <div class="flex flex-col items-center justify-center mb-6 p-6 border border-gray-300 rounded-xl bg-gray-50 shadow-inner">
+                <!-- Live QR Code generation from a UPI deep link -->
+                <a href="upi://pay?pa=notes.physics@upi&pn=PhysicsNotes&am=39&cu=INR" target="_blank" class="block mb-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=notes.physics@upi&pn=PhysicsNotes&am=39&cu=INR" alt="UPI QR Code" class="w-52 h-52 rounded-md shadow-lg mx-auto border-4 border-white">
+                </a>
+                <p class="text-xl font-semibold text-gray-800 break-all relative">
+                    UPI ID: <span id="upiIdToCopy" class="text-blue-700">notes.physics@upi</span>
+                    <button id="copyUpiIdBtn" class="ml-2 px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500">कॉपी करें</button>
+                    <span id="copyConfirmMsg" class="copy-confirm">कॉपी किया गया!</span>
+                </p>
+                <p class="text-lg font-bold text-green-600 mt-3">राशि: ₹39</p>
+            </div>
+
+            <p class="text-md text-gray-600 mb-6">भुगतान करने के बाद, नोट्स प्राप्त करने के लिए कृपया अपना विवरण भरें।</p>
+            <p class="text-sm text-gray-700 font-semibold mb-6">भुगतान सत्यापन के बाद, नोट्स का डाउनलोड लिंक आपके ईमेल पर भेज दिया जाएगा।</p> <!-- Added instruction -->
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button id="goToFormBtn" class="cta-button text-white font-bold py-3 px-6 rounded-full shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-opacity-75">
+                    मैंने भुगतान कर दिया है, विवरण भरें
+                </button>
+                <button id="closeModalBtn" class="bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full shadow-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75">
+                    बंद करें
+                </button>
+            </div>
+            <p class="text-xs text-red-500 mt-5">**यह केवल एक डेमो है। वास्तविक भुगतान के लिए आपको एक पेमेंट गेटवे की आवश्यकता होगी।**</p>
+        </div>
+    </div>
+
+    <!-- Policy Modals (New Structure) -->
+    <div id="privacyPolicyModal" class="policy-modal-overlay">
+        <div class="policy-modal-content">
+            <button class="close-button" data-close-modal>✕</button>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">गोपनीयता नीति</h2>
+            <p class="mb-4">हम आपकी गोपनीयता का सम्मान करते हैं और आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए प्रतिबद्ध हैं। यह नीति बताती है कि हम आपकी जानकारी कैसे एकत्र करते हैं, उपयोग करते हैं और सुरक्षित रखते हैं।</p>
+            <h3 class="font-semibold text-xl mb-2">जानकारी का संग्रह</h3>
+            <p class="mb-4">जब आप हमारे नोट्स खरीदते हैं, तो हम आपका नाम, ईमेल पता, और भुगतान विवरण (जैसे ट्रांजेक्शन ID) एकत्र कर सकते हैं। यह जानकारी केवल आपके ऑर्डर को संसाधित करने और आपको नोट्स डिलीवर करने के लिए उपयोग की जाती है।</p>
+            <h3 class="font-semibold text-xl mb-2">जानकारी का उपयोग</h3>
+            <p class="mb-4">आपकी जानकारी का उपयोग केवल आपके ऑर्डर को पूरा करने, ग्राहक सहायता प्रदान करने और आपको आवश्यक अपडेट भेजने के लिए किया जाता है। हम आपकी व्यक्तिगत जानकारी किसी तीसरे पक्ष के साथ साझा, बेचते या किराए पर नहीं देते हैं, सिवाय इसके कि कानून द्वारा आवश्यक हो या सेवा प्रदान करने के लिए आवश्यक हो (जैसे भुगतान प्रोसेसर)।</p>
+            <h3 class="font-semibold text-xl mb-2">डेटा सुरक्षा</h3>
+            <p>हम आपकी जानकारी को अनधिकृत पहुंच, उपयोग या प्रकटीकरण से बचाने के लिए उचित सुरक्षा उपाय करते हैं। हालांकि, इंटरनेट पर डेटा ट्रांसमिशन का कोई भी तरीका 100% सुरक्षित नहीं है।</p>
+            <p class="text-sm text-gray-600 mt-6">अंतिम अपडेट: 7 जुलाई 2025</p>
+        </div>
+    </div>
+
+    <div id="refundPolicyModal" class="policy-modal-overlay">
+        <div class="policy-modal-content">
+            <button class="close-button" data-close-modal>✕</button>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">वापसी नीति</h2>
+            <p class="mb-4">चूंकि हमारे नोट्स डिजिटल प्रोडक्ट हैं, इसलिए एक बार जब डाउनलोड लिंक ग्राहक को ईमेल कर दिया जाता है, तो हम आमतौर पर वापसी या रिफंड की पेशकश नहीं करते हैं।</p>
+            <p class="mb-4">हालांकि, यदि आपको नोट्स डाउनलोड करने में गंभीर तकनीकी समस्या का सामना करना पड़ता है और हमारी ग्राहक सहायता टीम इसे हल करने में असमर्थ है, तो हम मामले-दर-मामले के आधार पर रिफंड पर विचार कर सकते हैं।</p>
+            <p>रिफंड के किसी भी अनुरोध के लिए, कृपया खरीद के 7 दिनों के भीतर हमें <a href="mailto:your_email@example.com" class="text-blue-600 hover:underline">your_email@example.com</a> पर संपर्क करें, जिसमें आपके ऑर्डर का विवरण और समस्या का स्पष्ट विवरण शामिल हो।</p>
+            <p class="text-sm text-gray-600 mt-6">अंतिम अपडेट: 7 जुलाई 2025</p>
+        </div>
+    </div>
+
+    <div id="termsConditionsModal" class="policy-modal-overlay">
+        <div class="policy-modal-content">
+            <button class="close-button" data-close-modal>✕</button>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">नियम और शर्तें</h2>
+            <p class="mb-4">हमारे नोट्स खरीदने और उपयोग करने से, आप निम्नलिखित नियमों और शर्तों से सहमत होते हैं:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>**उपयोग का लाइसेंस:** खरीदे गए नोट्स केवल व्यक्तिगत, गैर-व्यावसायिक उपयोग के लिए हैं। आप नोट्स को किसी तीसरे पक्ष के साथ साझा, वितरित, बेच या पुनर्विक्रय नहीं कर सकते हैं।</li>
+                <li>**कॉपीराइट:** सभी नोट्स का कॉपीराइट [आपका नाम/कंपनी का नाम] के पास सुरक्षित है। नोट्स का अनधिकृत प्रजनन या वितरण सख्त वर्जित है।</li>
+                <li>**भुगतान:** सभी भुगतान UPI के माध्यम से किए जाने चाहिए। भुगतान सत्यापन के बाद ही नोट्स डिलीवर किए जाएंगे।</li>
+                        <li>**सामग्री की सटीकता:** हमने नोट्स को सटीक और अद्यतन रखने के लिए हर संभव प्रयास किया है, लेकिन हम उनकी पूर्ण सटीकता या पूर्णता की गारंटी नहीं देते हैं।</li>
+                        <li>**सेवा में परिवर्तन:** हम बिना किसी पूर्व सूचना के किसी भी समय इन नियमों और शर्तों या नोट्स की सामग्री को संशोधित करने का अधिकार सुरक्षित रखते हैं।</li>
+                    </ul>
+                    <p>इन नियमों और शर्तों के संबंध में किसी भी प्रश्न के लिए, कृपया हमसे <a href="mailto:your_email@example.com" class="text-blue-600 hover:underline">your_email@example.com</a> पर संपर्क करें।</p>
+                    <p class="text-sm text-gray-600 mt-6">अंतिम अपडेट: 7 जुलाई 2025</p>
+                </div>
+            </div>
+
+            <div id="contactModal" class="policy-modal-overlay">
+                <div class="policy-modal-content">
+                    <button class="close-button" data-close-modal>✕</button>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">हमसे संपर्क करें</h2>
+                    <p class="text-lg text-gray-700 mb-4">यदि आपके कोई प्रश्न, प्रतिक्रिया या सहायता की आवश्यकता है, तो कृपया बेझिझक हमसे संपर्क करें।</p>
+                    <p class="text-xl font-semibold text-gray-800 mb-4">ईमेल: <a href="mailto:your_email@example.com" class="text-blue-600 hover:underline">your_email@example.com</a></p>
+                    <p class="text-md text-gray-600">हम 24-48 घंटों के भीतर जवाब देने का प्रयास करेंगे।</p>
+                    <p class="text-sm text-gray-600 mt-6">अंतिम अपडेट: 7 जुलाई 2025</p>
+                </div>
+            </div>
+
+            <!-- Testimonial Modal -->
+            <div id="testimonialModalOverlay" class="testimonial-modal-overlay">
+                <div class="testimonial-modal-content">
+                    <button class="close-button" id="testimonialCloseButton">✕</button>
+                    <p id="testimonialText" class="text-gray-700 italic text-xl mb-4"></p>
+                    <p id="testimonialAuthor" class="font-semibold text-gray-900 text-lg"></p>
+                </div>
+            </div>
+
+            <!-- Scroll to Top Button -->
+            <button id="scrollToTopBtn" title="ऊपर स्क्रॉल करें">↑</button>
+
+            <script>
+                // Smooth scrolling for "और जानें" button
+                document.querySelector('a[href="#features"]').addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+
+                // Get modal elements
+                const upiModal = document.getElementById('upiModal');
+                const closeModalBtn = document.getElementById('closeModalBtn');
+                const goToFormBtn = document.getElementById('goToFormBtn');
+                const copyUpiIdBtn = document.getElementById('copyUpiIdBtn');
+                const upiIdToCopy = document.getElementById('upiIdToCopy');
+                const copyConfirmMsg = document.getElementById('copyConfirmMsg');
+                const newsletterForm = document.getElementById('newsletterForm'); // Added newsletter form
+                const newsletterEmailInput = document.getElementById('newsletterEmailInput'); // Newsletter email input
+                const newsletterMessage = document.getElementById('newsletterMessage'); // Newsletter message div
+
+                // Get Buy Now buttons
+                const buyNowBtnHero = document.getElementById('buyNowBtnHero');
+                const buyNowBtnFooter = document.getElementById('buyNowBtnFooter');
+                const getFreeSampleBtn = document.getElementById('getFreeSampleBtn'); // New free sample button
+
+                // Google Form URL for Paid Product (Replace with your actual Google Form link)
+                const GOOGLE_FORM_URL = "YOUR_GOOGLE_FORM_LINK_HERE"; // <-- यहां अपना Google Form लिंक डालें
+
+                // Google Form URL for Free Sample (Replace with your actual Google Form link for free sample)
+                const FREE_SAMPLE_FORM_URL = "YOUR_GOOGLE_FORM_LINK_HERE_FOR_FREE_SAMPLE"; // <-- मुफ़्त सैंपल के लिए Google Form लिंक डालें
+
+                // Google Apps Script Web App URL for Newsletter (Replace with your actual Apps Script URL)
+                const NEWSLETTER_APPS_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE_FOR_NEWSLETTER"; // <-- यहां अपना Google Apps Script Web App URL डालें
+
+                // Function to show the modal
+                function showModal(modalElement) {
+                    modalElement.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                }
+
+                // Function to hide the modal
+                function hideModal(modalElement) {
+                    modalElement.classList.remove('active');
+                    document.body.style.overflow = ''; // Restore background scrolling
+                }
+
+                // Function to display newsletter message
+                function displayNewsletterMessage(message, type) {
+                    newsletterMessage.textContent = message;
+                    newsletterMessage.className = `p-3 rounded-lg mt-4 text-center hidden ${type}`;
+                    newsletterMessage.classList.remove('hidden');
+                    newsletterMessage.classList.add('show');
+                    setTimeout(() => {
+                        newsletterMessage.classList.remove('show');
+                        newsletterMessage.classList.add('hidden');
+                    }, 5000); // Hide after 5 seconds
+                }
+
+                // Event listeners for Buy Now buttons to show UPI modal
+                buyNowBtnHero.addEventListener('click', () => showModal(upiModal));
+                buyNowBtnFooter.addEventListener('click', () => showModal(upiModal));
+
+                // Event listener for close UPI modal button
+                closeModalBtn.addEventListener('click', () => hideModal(upiModal));
+
+                // Event listener for overlay click to close UPI modal (optional)
+                upiModal.addEventListener('click', function(e) {
+                    if (e.target === upiModal) {
+                        hideModal(upiModal);
+                    }
+                });
+
+                // Event listener for "मैंने भुगतान कर दिया है, विवरण भरें" button
+                goToFormBtn.addEventListener('click', function() {
+                    if (GOOGLE_FORM_URL === "YOUR_GOOGLE_FORM_LINK_HERE") {
+                        alert("कृपया Google Form लिंक को कोड में अपडेट करें।");
+                        return;
+                    }
+                    // Redirect to Google Form after user indicates payment is done
+                    window.open(GOOGLE_FORM_URL, '_blank'); // Open in a new tab
+                    hideModal(upiModal); // Close the modal after redirecting
+                });
+
+                // Event listener for Copy UPI ID button
+                copyUpiIdBtn.addEventListener('click', function() {
+                    const textToCopy = upiIdToCopy.textContent;
+                    // Using document.execCommand('copy') for better iframe compatibility
+                    const tempInput = document.createElement('input');
+                    tempInput.value = textToCopy;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempInput);
+
+                    copyConfirmMsg.classList.add('show');
+                    setTimeout(() => {
+                        copyConfirmMsg.classList.remove('show');
+                    }, 2000); // Hide after 2 seconds
+                });
+
+                // Accordion Logic (for FAQ section only)
+                const accordionItems = document.querySelectorAll('#faq-accordion .accordion-item');
+
+                accordionItems.forEach(item => {
+                    const question = item.querySelector('.accordion-question');
+                    const answer = item.querySelector('.accordion-answer');
+
+                    question.addEventListener('click', () => {
+                        const isOpen = answer.classList.contains('open');
+
+                        // Close all other open answers in the same accordion group
+                        accordionItems.forEach(otherItem => {
+                            const otherAnswer = otherItem.querySelector('.accordion-answer');
+                            const otherQuestion = otherItem.querySelector('.accordion-question');
+                            if (otherAnswer !== answer && otherAnswer.classList.contains('open')) {
+                                otherAnswer.classList.remove('open');
+                                otherAnswer.style.maxHeight = null;
+                                otherQuestion.classList.remove('active');
+                            }
+                        });
+
+                        // Toggle current answer
+                        if (isOpen) {
+                            answer.classList.remove('open');
+                            answer.style.maxHeight = null;
+                            question.classList.remove('active');
+                        } else {
+                            answer.classList.add('open');
+                            answer.style.maxHeight = answer.scrollHeight + "px"; // Set max-height dynamically
+                            question.classList.add('active');
+                        }
+                    });
+                });
+
+                // Scroll to Top Button Logic
+                const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+                const progressBar = document.getElementById("progressBar");
+
+                window.onscroll = function() {
+                    scrollFunction();
+                    updateProgressBar();
+                };
+
+                function scrollFunction() {
+                    // Show/hide scroll to top button
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        scrollToTopBtn.style.display = "block";
+                    } else {
+                        scrollToTopBtn.style.display = "none";
+                    }
+                }
+
+                function updateProgressBar() {
+                    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    const scrolled = (winScroll / height) * 100;
+                    progressBar.style.width = scrolled + "%";
+                }
+
+                scrollToTopBtn.addEventListener('click', function() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                });
+
+                // Policy Modals Logic
+                const policyModals = {
+                    privacy: document.getElementById('privacyPolicyModal'),
+                    refund: document.getElementById('refundPolicyModal'),
+                    terms: document.getElementById('termsConditionsModal'),
+                    contact: document.getElementById('contactModal')
+                };
+
+                document.querySelectorAll('.footer-link').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const policyType = this.dataset.policy;
+                        if (policyModals[policyType]) {
+                            showModal(policyModals[policyType]);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.policy-modal-overlay .close-button').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const modal = this.closest('.policy-modal-overlay');
+                        if (modal) {
+                            hideModal(modal);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.policy-modal-overlay').forEach(overlay => {
+                    overlay.addEventListener('click', function(e) {
+                        if (e.target === overlay) {
+                            hideModal(overlay);
+                        }
+                    });
+                });
+
+
+                // Initial setup on DOMContentLoaded
+                document.addEventListener('DOMContentLoaded', () => {
+                    startCountdown();
+                    updateProgressBar(); // Initial update for progress bar
+                });
+
+                // Countdown Timer Logic
+                function startCountdown() {
+                    // Set the end date for the offer (e.g., 7 days from now)
+                    const endDate = new Date();
+                    endDate.setDate(endDate.getDate() + 7); // Offer ends in 7 days
+                    const countDownDate = endDate.getTime();
+
+                    const x = setInterval(function() {
+                        const now = new Date().getTime();
+                        const distance = countDownDate - now;
+
+                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+                        document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+                        document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+                        document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("countdown").innerHTML = "<span class='text-red-500 font-bold'>ऑफर समाप्त!</span>";
+                            // Optionally, disable buy buttons or change price here
+                            document.getElementById('buyNowBtnHero').disabled = true;
+                            document.getElementById('buyNowBtnFooter').disabled = true;
+                            document.getElementById('buyNowBtnHero').classList.add('opacity-50', 'cursor-not-allowed');
+                            document.getElementById('buyNowBtnFooter').classList.add('opacity-50', 'cursor-not-allowed');
+                        }
+                    }, 1000);
+                }
+
+                // Chat Widget Button Placeholder
+                document.getElementById('chatWidgetBtn').addEventListener('click', function() {
+                    alert('यह एक चैट विजेट का डेमो है। वास्तविक चैट कार्यक्षमता के लिए एकीकरण की आवश्यकता होगी।');
+                });
+
+                // Testimonial Modal Logic
+                const testimonialModalOverlay = document.getElementById('testimonialModalOverlay');
+                const testimonialModalContent = document.getElementById('testimonialModalContent');
+                const testimonialCloseButton = document.getElementById('testimonialCloseButton');
+                const testimonialText = document.getElementById('testimonialText');
+                const testimonialAuthor = document.getElementById('testimonialAuthor');
+
+                const allTestimonials = [
+                    { text: "ये नोट्स मेरी भौतिकी की तैयारी के लिए गेम-चेंजर साबित हुए! बहुत आसान भाषा में सब कुछ समझाया गया है।", author: "रवि कुमार, कानपुर" },
+                    { text: "मैंने सोचा भी नहीं था कि हैंड रिटेन नोट्स इतने उपयोगी हो सकते हैं। धन्यवाद!", author: "पूजा सिंह, पटना" },
+                    { text: "अब मुझे भौतिकी का डर नहीं लगता। सब कुछ व्यवस्थित और स्पष्ट है।" , author: "आकाश वर्मा, जयपुर" },
+                    { text: "इन नोट्स ने मेरे कॉन्सेप्ट्स को बहुत मजबूत किया। परीक्षा में बहुत मदद मिली।" , author: "स्नेहा कुमारी, भोपाल" },
+                    { text: "भौतिकी के लिए इससे बेहतर नोट्स नहीं मिल सकते। हर छात्र को इन्हें खरीदना चाहिए।" , author: "विक्रम सिंह, लखनऊ" },
+                    { text: "मुझे लगा था कि भौतिकी बहुत मुश्किल है, लेकिन इन नोट्स ने इसे बहुत आसान बना दिया।" , author: "आयशा खान, दिल्ली" }
+                ];
+
+                document.querySelectorAll('.testimonial-card').forEach(card => {
+                    card.addEventListener('click', function() {
+                        const testimonialId = parseInt(this.dataset.testimonialId) - 1; // Get index
+                        const testimonialData = allTestimonials[testimonialId];
+
+                        testimonialText.textContent = `"${testimonialData.text}"`;
+                        testimonialAuthor.textContent = `- ${testimonialData.author}`;
+                        showModal(testimonialModalOverlay);
+                    });
+                });
+
+                testimonialCloseButton.addEventListener('click', () => hideModal(testimonialModalOverlay));
+                testimonialModalOverlay.addEventListener('click', function(e) {
+                    if (e.target === testimonialModalOverlay) {
+                        hideModal(testimonialModalOverlay);
+                    }
+                });
+
+                // Newsletter Form Submission Logic (using fetch)
+                newsletterForm.addEventListener('submit', async function(e) {
+                    e.preventDefault(); // Prevent default form submission
+
+                    const email = newsletterEmailInput.value;
+                    const formData = new FormData();
+                    formData.append('email', email);
+
+                    if (NEWSLETTER_APPS_SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE_FOR_NEWSLETTER") {
+                        displayNewsletterMessage("कृपया न्यूज़लेटर फॉर्म के लिए Google Apps Script Web App URL को कोड में अपडेट करें।", "error");
+                        return;
+                    }
+
+                    try {
+                        const response = await fetch(NEWSLETTER_APPS_SCRIPT_URL, {
+                            method: 'POST',
+                            body: formData,
+                            // mode: 'no-cors' is often needed for Apps Script, but can hide errors.
+                            // Better to configure Apps Script to allow CORS from your domain.
+                        });
+
+                        // Apps Script usually returns plain text "Success" or "Error"
+                        const result = await response.text();
+
+                        if (result.includes("Success")) {
+                            displayNewsletterMessage("आपकी सदस्यता सफल रही! धन्यवाद!", "success");
+                            newsletterEmailInput.value = ''; // Clear input
+                        } else {
+                            displayNewsletterMessage("सदस्यता में त्रुटि हुई। कृपया पुनः प्रयास करें।", "error");
+                            console.error("Apps Script Error:", result);
+                        }
+                    } catch (error) {
+                        displayNewsletterMessage("नेटवर्क त्रुटि। कृपया अपना इंटरनेट कनेक्शन जांचें।", "error");
+                        console.error("Fetch error:", error);
+                    }
+                });
+
+                // Free Sample Button Logic
+                getFreeSampleBtn.addEventListener('click', function() {
+                    if (FREE_SAMPLE_FORM_URL === "YOUR_GOOGLE_FORM_LINK_HERE_FOR_FREE_SAMPLE") {
+                        alert("कृपया मुफ़्त सैंपल के लिए Google Form लिंक को कोड में अपडेट करें।");
+                        return;
+                    }
+                    window.open(FREE_SAMPLE_FORM_URL, '_blank'); // Open free sample form in new tab
+                });
+
+                // Google Analytics Placeholder (Replace with your actual GA code)
+                // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                // ga('create', 'UA-XXXXX-Y', 'auto'); // Replace UA-XXXXX-Y with your actual GA tracking ID
+                // ga('send', 'pageview');
+            </script>
+        </body>
+        </html>
